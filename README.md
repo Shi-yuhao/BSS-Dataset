@@ -12,22 +12,40 @@ We have provided two CSV data files. Through code processing, the original data 
 4、According to the ratio of train:valid:test = 7:1:2, the txt file is split into train.txt, valid.txt and test.txt. Based on the modified configuration in fits_config.py and the txt file, the train_dataset_generator.py will generate the final data after random cropping and also create npy, xml and other files.
 
 # Data
-├── dataset
-│   ├── VOCdevkit
-│   │   ├── VOC2007
-│   │   │   ├── Annotations
-│   │   │   │   ├── annotation_1.xml
-│   │   │   │   ├── annotation_2.xml
-│   │   │   │   ├── ...
-│   │   │   ├── ImageSets
-│   │   │   │   ├── Main
-│   │   │   │   │   ├── train.txt
-│   │   │   │   │   ├── valid.txt
-│   │   │   │   │   ├── test.txt
-│   │   │   ├── JPEGImages
-│   │   │   │   ├── dataset_image_1.npy
-│   │   │   │   ├── dataset_image_2.npy
-│   │   │   │   ├── ...
-│   ├── train_annotation.txt
-│   ├── valid_annotation.txt
-│   ├── test_annotation.txt
+<pre>  ├── dataset 
+  
+  │ ├── VOCdevkit 
+  
+  │ │ ├── VOC2007 
+  
+  │ │ │ ├── Annotations 
+  
+  │ │ │ │ ├── annotation_1.xml 
+  
+  │ │ │ │ ├── annotation_2.xml 
+  
+  │ │ │ │ └── ... 
+  
+  │ │ │ ├── ImageSets 
+  
+  │ │ │ │ └── Main 
+  
+  │ │ │ │ ├── train.txt 
+  
+  │ │ │ │ ├── valid.txt 
+  
+  │ │ │ │ └── test.txt 
+  
+  │ │ │ ├── JPEGImages 
+  
+  │ │ │ │ ├── dataset_image_1.npy 
+  
+  │ │ │ │ ├── dataset_image_2.npy 
+  
+  │ │ │ │ └── ... 
+  
+  │ ├── train_annotation.txt 
+  
+  │ ├── valid_annotation.txt 
+  
+  │ └── test_annotation.txt  </pre>
